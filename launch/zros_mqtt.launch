@@ -1,0 +1,13 @@
+<!--xml vesion="1.0"-->
+<launch>
+	<param name="api_version" value="v1"/>
+	<param name="site_id" value="ZR"/>
+    <param name="rdms_service_name" value="ZRSaaS"/>
+    <param name="cmder_service_name" value="ad-commander"/>
+
+	<node pkg="mqtt_socket" type="mqtt_socket_node" name="mqtt_socket_node" respawn="true" output="screen">
+	    <param name="debug" value="false"/>
+		<param name="info_rate" value="3.0"/>
+		<param name="broker" value="Zhen"/>
+	</node>
+</launch>

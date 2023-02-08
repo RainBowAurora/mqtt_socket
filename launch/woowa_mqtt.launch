@@ -1,0 +1,14 @@
+<!--xml vesion="1.0"-->
+<launch>
+	<param name="api_version" value="v2"/>
+	<param name="site_id" value="32"/>
+	<param name="comder_site_id" value="1"/>
+    <param name="rdms_service_name" value="rdms"/>
+    <param name="cmder_service_name" value="ad-commander"/>
+
+	<node pkg="mqtt_socket" type="mqtt_socket_node" name="mqtt_socket_node" respawn="true" output="screen">
+	    <param name="debug" value="true"/>
+		<param name="info_rate" value="3.0"/>
+		<param name="broker" value="Beta"/>
+	</node>
+</launch>
